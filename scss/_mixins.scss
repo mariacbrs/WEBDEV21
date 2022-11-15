@@ -1,0 +1,28 @@
+@mixin flexColunm{
+    display: flex;
+    flex-direction: column;
+}
+
+// @mixin directionColumn()
+
+@mixin flexElement($direction,$column,$row){
+    display: flex;
+    flex-direction: $direction;
+    column-gap: $column;
+    row-gap: $row;
+}
+
+@mixin flexConten( 
+    $column: 0,
+    $row: 0,
+    $direction: row,
+    $justify :center,
+    $align: center
+){
+    display:flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    column-gap: $column;
+    row-gap: $row; 
+}
