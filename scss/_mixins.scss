@@ -26,3 +26,17 @@
     column-gap: $column;
     row-gap: $row; 
 }
+
+@mixin flextext {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin bgImage($url) {
+    background-image: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
