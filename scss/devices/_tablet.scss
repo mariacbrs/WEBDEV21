@@ -1,61 +1,169 @@
-@media (min-width:600px){
+@media (min-width: 600px) {
 
-    details{
-        display: none;
-    }
+   details {
+      display: none;
+   }
 
-    nav{
-        display: flex;
-        padding-top: 0;
-        display: flex;
-        row-gap: 4vh;
-        padding-bottom: 5vh;
-        height: 20vh;
+   nav {
+      padding-top: 0;
+      padding-bottom: 5vh;
+      height: 20vh;
+      display: flex;
+      row-gap: 4vh;
 
-        > article{
-            height: 100%;
-            width: 100%;
-            display: flex;
-            align-items: flex-end;
-            @include flexColunm;
-            justify-content: center;
-        }
+      > article {
+         height: 100%;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: flex-end;
+      }
 
-        > section{
-            position:fixed;
-        }
+      > section {
+         position: fixed;
+      }
 
-        ul{
-            display: flex;
-            justify-content: center;
-            column-gap: 2vh;
-            width: 100%;
-        }
+      ul {
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         column-gap: 2vh;
+      }
 
-        li{
-            display: flex;
-            width: 10%;
-        }
+      li {
+         width: 10%;
+         display: flex;
+      }
 
-        a{
-            height: 100%;
-            text-decoration: none;
-            color: $defaultColor;
-            width: 100%;
-            transform: .4s;
-            text-align: center;
-            padding: 1%;
-            height: 5vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+      a {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 1%;
+         height: 5vh;
+         width: 100%;
+         text-decoration: none;
+         color: $defaultColor;
+         text-align: center;
+         transition: .4s;
+      }
 
-        a:hover{
-            color:$defaultBlue;
-            background-color: gainsboro;
-        }
+      a:hover {
+         background-color: gainsboro;
+         color: $defaultBlue;
+      }
+   }
 
-    }
+   .features {
+      flex-direction: row;
+      column-gap: 5vh;
+   }
 
+   .activities{
+      > article{
+         background-position: center;
+      }
+
+      >section{
+         width: unset;
+      }
+
+      figure{
+         width: 90%;
+         flex-direction: row;
+         column-gap: 3vh;
+         padding: 3%;
+      }
+
+      img{
+         width: 15vh;
+         height: 15vh;
+      }
+   }
+
+   .company{
+      img{
+         width: 50%;
+      }
+
+      figcaption{
+         row-gap: 2vh;
+         align-items: flex-start;
+
+         a{
+            width: 25%;
+            font-size: 18px;
+            transition: .4s;
+
+
+            &:hover{
+               background-color: $defaultColor;
+               color: white;
+            }
+         }
+      }
+
+      > section{
+         >article{
+            width: 90%;
+         }
+      }
+
+     
+   }
+
+   .contact{
+      padding-right: 10%;
+      form{
+         width: 50%;
+      }
+
+      > section{
+         align-items: flex-end;
+      }
+
+      > figure{
+         align-items: flex-end;  
+      }
+
+      figcaption{
+         width: 50vh;
+      }
+
+      img{
+         object-fit: cover;
+         object-position: top;
+         width: 50vh;
+         height: 30vh;
+      }
+
+      [type="sumbit"]{
+         transition: .4s;
+
+         &:hover{
+            background-color: $defaultColor;
+            color: white;
+         }
+      }
+   }
+
+   .faq{
+      width: 100%;
+      align-items: center;
+      
+      > section{
+         width: 90%;
+         display: flex;
+         flex-direction: column;
+         row-gap: 4vh;
+      }
+
+
+
+ 
+   }
+
+   .accordion-buttom{
+      border-top: 1px solid var(--bs-accordion-bnt-color);
+   }
 }
